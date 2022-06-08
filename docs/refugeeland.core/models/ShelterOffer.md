@@ -1,6 +1,6 @@
 # ShelterOffer
 
-```cs
+```csharp
 public class ShelterOffer : IAuditable
 {
     public Guid Id { get; set; }
@@ -19,10 +19,10 @@ public class ShelterOffer : IAuditable
     public Guid CreatedBy { get; set; }
     public Guid UpdatedBy { get; set; }
 
-	[JsonIgnore]
+    [JsonIgnore]
     public IList<ShelterRequest> ShelterRequests { get; set; }
 	
-	[JsonIgnore]
+    [JsonIgnore]
     public IList<RefugeeGroup> RefugeeGroups { get; set; }
 }
 ```
